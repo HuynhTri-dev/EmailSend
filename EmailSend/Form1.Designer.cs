@@ -31,7 +31,7 @@
             this.recieve_txt = new System.Windows.Forms.TextBox();
             this.sender_txt = new System.Windows.Forms.TextBox();
             this.password_txt = new System.Windows.Forms.TextBox();
-            this.content = new System.Windows.Forms.RichTextBox();
+            this.content_txt = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -56,14 +56,15 @@
             this.password_txt.Name = "password_txt";
             this.password_txt.Size = new System.Drawing.Size(272, 22);
             this.password_txt.TabIndex = 2;
+            this.password_txt.UseSystemPasswordChar = true;
             // 
-            // content
+            // content_txt
             // 
-            this.content.Location = new System.Drawing.Point(244, 182);
-            this.content.Name = "content";
-            this.content.Size = new System.Drawing.Size(272, 117);
-            this.content.TabIndex = 3;
-            this.content.Text = "";
+            this.content_txt.Location = new System.Drawing.Point(244, 182);
+            this.content_txt.Name = "content_txt";
+            this.content_txt.Size = new System.Drawing.Size(272, 117);
+            this.content_txt.TabIndex = 3;
+            this.content_txt.Text = "";
             // 
             // button1
             // 
@@ -91,7 +92,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.content);
+            this.Controls.Add(this.content_txt);
             this.Controls.Add(this.password_txt);
             this.Controls.Add(this.sender_txt);
             this.Controls.Add(this.recieve_txt);
@@ -107,7 +108,7 @@
         private System.Windows.Forms.TextBox recieve_txt;
         private System.Windows.Forms.TextBox sender_txt;
         private System.Windows.Forms.TextBox password_txt;
-        private System.Windows.Forms.RichTextBox content;
+        private System.Windows.Forms.RichTextBox content_txt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
